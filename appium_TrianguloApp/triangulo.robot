@@ -4,7 +4,6 @@ Library           AppiumLibrary
 
 *** Test Cases ***
 Cenário: Triângulo equilátero
-    [Tags]    abrir app
     Dado que estou na tela do TrianguloApp
     Quando eu preencher todos os campos com 3
     E clicar em Calcular
@@ -26,5 +25,5 @@ Quando eu preencher todos os campos com 3
 E clicar em Calcular
     click element  id=btnCalcular
 
-Então a mensagem O triângulo é Equilátero sera exibida
-    element text should be  id=txtResultado  O triângulo é Equilátero
+Então a mensagem ${mensagem} sera exibida
+    element text should be  id=txtResultado  ${mensagem}
